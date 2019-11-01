@@ -28,16 +28,14 @@ class Display extends React.Component{
         return(
             <form className="App">
                 <div className="flex">
-                    <label>Ball:</label>
-                    <div>{this.state.balls}</div>
+                    <label>Balls: {this.state.balls}</label>
                     <button 
-                    onClick={(e)=>this.props.addBalls(e,this.state.balls)}>Increase balls</button>
+                    onClick={(e)=>this.props.addBalls(e,this.state.balls)}>Increase Balls</button>
                 </div>
                 <div className="flex">
-                    <label>Strikes:</label>
-                    <div>{this.state.strikes}</div>
+                    <label>Strikes: {this.state.strikes}</label>
                     <button
-                    onClick={(e)=>this.props.addStrikes(e,this.state.strikes)}>Increase strikes</button>
+                    onClick={(e)=>this.props.addStrikes(e,this.state.strikes)}>Increase Strikes</button>
                 </div>
                 <button onClick={(e)=>this.props.hit(e)}>Hit!</button>
                 <button onClick={(e)=>this.props.foul(e, this.state.strikes)}>Foul!</button>
